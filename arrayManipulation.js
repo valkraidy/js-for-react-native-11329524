@@ -1,3 +1,6 @@
+//TASK 1
+
+
 function processArray(numbers){
 let i =0;
 while(i < numbers.length){
@@ -11,3 +14,5 @@ while(i < numbers.length){
 return numbers;
 }
 console.log(processArray([1,2,3,4,5]));
+
+
