@@ -34,4 +34,20 @@ function formatArrayStrings(stringArray, numberArray) {
 
 
 //Task 3
+function createUserProfiles(names, modifiedNames) {
+  return names.map((name, index) => {
+    return {
+      originalName: name,
+      modifiedName: modifiedNames[index],
+      id: index + 1
+    };
+  });
+}
+
+const names = ["Kwame", "Kojo", "Kwaku", "Ama", "Kwabena"];
+const processedNumbers = processArray([1, 2, 3, 4, 5]);
+const modifiedNames = formatArrayStrings(names, processedNumbers);
+const userProfiles = createUserProfiles(names, modifiedNames);
+
+console.log(userProfiles);
 
