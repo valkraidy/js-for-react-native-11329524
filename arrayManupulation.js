@@ -16,3 +16,22 @@ return numbers;
 console.log(processArray([1,2,3,4,5]));
 
 
+
+
+
+
+//Task 2
+function formatArrayStrings(stringArray, numberArray) {
+  return stringArray.map((str, index) => {
+    if (numberArray[index] % 2 === 0) {
+      return str.toUpperCase();
+    } else {
+      return str.toLowerCase();
+    }
+  });
+}
+
+
+
+//Task 3
+
